@@ -1,0 +1,366 @@
+@font-face {
+    font-family: Gilroy-Semibold;
+    src: url(../fonts/Gilroy/Gilroy-Semibold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(../fonts/Gilroy/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr-Light;
+    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf);
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr-Roman;
+    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf);
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr-Medium;
+    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf);
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr-Bold;
+    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf);
+}
+
+:root {
+	--corporate-color-1: #FCC152;
+	--corporate-color-hover-1: #e74940;
+	--corporate-color-2: #2292bb;
+	--default-color: #323232;
+}
+
+.home-title {
+	font-family: Gilroy-Bold;
+	font-size: 50px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.home-subtitle {
+	font-size: 36px;
+	font-family: HelveticaNeueCyr-Roman;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	margin-bottom: 25px;
+}
+
+.logo-title {
+	font-size: 32px;
+	font-family: Gilroy-Bold;
+	color: var(--corporate-color-1);
+	line-height: 75%;
+}
+
+.logo-description {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: HelveticaNeueCyr-Roman;
+	line-height: 125%;
+}
+
+.header-description {
+	color: #FFFFFF;
+	font-size: 32px;
+	font-family: HelveticaNeueCyr-Bold;
+}
+
+.header-phone {
+	color: #FFFFFF;
+	font-size: 26px;
+	font-family: Gilroy-Bold;
+	display: block;
+	line-height: 125%;
+}
+
+.header-phone span {
+	color: var(--corporate-color-1);
+}
+
+.header-email {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: Gilroy-Semibold;
+	display: block;
+}
+
+.header-phone:hover,
+.header-email:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+/*** CALCULATOR ***/
+.metal-calc{
+	background-color: #e7e7e7;
+	text-align: center;
+	border: 1px solid #FFF;
+	margin-top: 25px;
+	padding-bottom: 2px;
+    -webkit-box-shadow: 0 0 10px #d1d1d1;
+    -moz-box-shadow: 0 0 10px #d1d1d1;
+    box-shadow: 0 0 10px #d1d1d1;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.metal-calc .title {
+	top: -7px;
+}
+
+.metal-calc select{
+	width: 250px;
+	border: 1px solid #707070;
+	padding:1px;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.metal-calc select option{}
+
+.metal-calc .button{
+	float: left;
+	width: 88px;
+	z-index: 1;
+	margin: 5px 10px;
+}
+
+.metal-calc .button a{margin:1px;float:left;display:block;width:42px;height:42px;background-image:url("../img/calc_btns.png")}
+.metal-calc .button a+a{background-position:-210px 0;}
+.metal-calc .button a+a+a{background-position:-42px 0;}
+.metal-calc .button a+a+a+a{background-position:-252px 0;}
+.metal-calc .button a+a+a+a+a{background-position:-84px 0;}
+.metal-calc .button a+a+a+a+a+a{background-position:-294px 0;}
+.metal-calc .button a+a+a+a+a+a+a{background-position:-126px 0;}
+.metal-calc .button a+a+a+a+a+a+a+a{background-position:-336px 0;}
+.metal-calc .button a+a+a+a+a+a+a+a+a{background-position:-168px 0;}
+.metal-calc .button a+a+a+a+a+a+a+a+a+a{background-position:-378px 0;}
+
+.metal-calc .button a:hover{background-position:0 -42px;}
+.metal-calc .button a+a:hover{background-position:-210px -42px;}
+.metal-calc .button a+a+a:hover{background-position:-42px -42px;}
+.metal-calc .button a+a+a+a:hover{background-position:-252px -42px;}
+.metal-calc .button a+a+a+a+a:hover{background-position:-84px -42px;}
+.metal-calc .button a+a+a+a+a+a:hover{background-position:-294px -42px;}
+.metal-calc .button a+a+a+a+a+a+a:hover{background-position:-126px -42px;}
+.metal-calc .button a+a+a+a+a+a+a+a:hover{background-position:-336px -42px;}
+.metal-calc .button a+a+a+a+a+a+a+a+a:hover{background-position:-168px -42px;}
+.metal-calc .button a+a+a+a+a+a+a+a+a+a:hover{background-position:-378px -42px;}
+
+.metal-calc .button a.select{background-position:0 -84px;}
+.metal-calc .button a+a.select{background-position:-210px -84px;}
+.metal-calc .button a+a+a.select{background-position:-42px -84px;}
+.metal-calc .button a+a+a+a.select{background-position:-252px -84px;}
+.metal-calc .button a+a+a+a+a.select{background-position:-84px -84px;}
+.metal-calc .button a+a+a+a+a+a.select{background-position:-294px -84px;}
+.metal-calc .button a+a+a+a+a+a+a.select{background-position:-126px -84px;}
+.metal-calc .button a+a+a+a+a+a+a+a.select{background-position:-336px -84px;}
+.metal-calc .button a+a+a+a+a+a+a+a+a.select{background-position:-168px -84px;}
+.metal-calc .button a+a+a+a+a+a+a+a+a+a.select{background-position:-378px -84px;}
+
+.metal-calc .inputs{text-align:right;margin:10px 12px 10px 108px;}
+.metal-calc .inputs input{text-align:right;
+    border:1px solid #8e8e8e;margin-bottom:3px;padding:3px 5px;width:110px;
+    	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.metal-calc .inputs label{color:#1b375d;padding-left:8px;width:20px;text-align:left;display:-moz-inline-stack;display:inline-block;/zoom:1;/display:inline;}
+.metal-calc .summ{text-align:right;margin:0 12px 10px 108px;}
+.metal-calc .summ b{display:block;text-align:left;color:#294366;text-transform:uppercase;padding:0 2px 4px}
+
+.metal-calc .summ #summ-kg,
+.metal-calc .summ #summ-m3 {
+    color: #FFF;
+	background-color: #a8a8a8;
+	font-weight: bold;
+	margin-bottom: 3px;
+    border: 1px solid #757575;
+	padding: 3px 5px;
+	width: 110px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	/*zoom: 1;*/
+	display: inline;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.metal-calc .summ label{color:#1b375d;padding-left:8px;width:20px;text-align:left;display:-moz-inline-stack;display:inline-block;/zoom:1;/display:inline;}
+.metal-calc .calc-send{cursor:pointer}
+.calc-clear {cursor:pointer;transition: all 0.3s ease}
+
+.calc-clear:hover {filter: brightness(1.3)}
+/*** END CALCULATOR ***/
+
+
+/*** HOME SECTION ***/
+video{
+	position: absolute;
+	z-index:-2;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+#overlay {
+	background: rgba(0,0,0,0.25);
+	position: absolute;
+	z-index:-1;
+	width: 100%;
+	height: 100%;
+}
+
+nav li {
+	margin-right: 28px;
+}
+
+#kredit {
+	position: absolute;
+	top: 25px;
+	right: 0;
+}
+/*** END HOME SECTION ***/
+
+
+/* CONTENT SECTION */
+.table td {
+	vertical-align: middle;
+}
+/* END CONTENT SECTION */
+
+
+/* VIBROPOGRUGATEL SHPUNTA SECTION */
+.vibropogrujatel-shpunta-section {
+	padding-top: 25px;
+	padding-bottom: 75px;
+	background-color: #47474F;
+	color: #FFFFFF;
+}
+
+.vibropogrujatel-shpunta-section h2 {
+	color: var(--corporate-color-1);
+	font-family: Gilroy-Bold;
+	font-size: 30px;
+}
+
+.vibropogrujatel-shpunta-section li {
+	font-family: Gilroy-Bold;
+	font-size: 26px;
+	color: #FFFFFF;
+	line-height: 100%;
+}
+
+.vibropogrujatel-shpunta-section img {
+	width: 100%;
+	border-radius: 5px;
+}
+/* END VIBROPOGRUGATEL SHPUNTA SECTION */
+
+
+/* CONTACTS */
+.contacts-section {
+	background: #343A3F;
+	color: #FFFFFF;
+}
+
+.contacts-section ul {
+	list-style: none;
+}
+
+.contacts-section li,
+#im-in-footer {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: HelveticaNeueCyr-Light;
+}
+
+footer {
+    border-top: 1px solid rgba(255,255,255,.25);
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+#im-in-footer a {
+	color: #FFFFFF !important;
+	text-decoration: underline;
+	font-size: 16px;
+	font-family: HelveticaNeueCyr-Light;
+}
+/* END CONTACTS */
+
+
+#background-msg { /* Затемненный задний фон для сообщения об упешной отправки данных */
+	background: black; /* Цвет фона */
+	z-index: 3; /* Накладываем фон сверху обычного экрана */
+	position: fixed; /* Привязываем фон к точкам указанными свойствами top, right, bottom, left */
+	top: 0; /* Начать окно сверху */
+	right: 0; /* Начать окно справа */
+	bottom: 0; /* Начать окно снизу */
+	left: 0; /* Начать окно слева */
+	opacity: 0.9; } /* Прозрачность фона 50% */
+
+#message { /* Сообщение об успешной отправке данных */
+	z-index: 3; /* Отображаем блок поверх обложки */
+	max-width: 450px; /* Ширина блока */
+	position: fixed; /* Фиксируем блок поверх подложки */
+	top: 45%; /* Отступ сверху */
+	left: 0%; /* Отступ слева */
+	right: 0%; /* Отступ справа */
+	text-align: center;
+	font-size: 130%;
+	color: white;
+	margin: auto;} /* Центрируем текст по ширине блока */
+
+
+@media screen and (max-width: 1199px) {
+	nav li { margin-right: 2px; }
+	video { width: auto; height: 100%;}
+}
+
+@media screen and (max-width: 991px) {
+	nav li { margin-right: 0; margin-left: 30px; }
+}
+
+@media screen and (max-width: 767px) {
+	.home-title {
+		font-size: 40px;
+		margin-bottom: 50px;
+	}
+	.home-subtitle {
+		font-size: 30px;
+		font-weight: 300;
+		text-align: left;
+	}
+	h2,
+	.logo-description,
+	.header-phone,
+	.header-email {
+		text-align: center;
+	}
+	
+	#name { padding-top: 25px !important; padding-bottom: 25px !important; }
+	.left { text-align: left!important; }
+	.logo-title { font-size: 2rem!important; }
+	
+	.vibropogrujatel-shpunta-section img {
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#kredit {
+		top: auto;
+		bottom: -50px;
+	}
+}
