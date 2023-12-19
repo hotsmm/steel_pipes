@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	
 	<!-- My CSS -->
+	<link rel="stylesheet" href="/css/theme.css">
+	<link rel="stylesheet" href="/style.css">
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/theme.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
@@ -83,12 +87,17 @@
 <div class="container-fluid" style="padding: 0; overflow: hidden; position: relative;">
 	<video autoplay loop playsinline muted>
 	   <source src="<?php echo get_template_directory_uri(); ?>/123.mp4">
+		
+	   <source src="/123.mp4">   <!--video-->
+		
 	</video>
 	<div id="overlay"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3" style="margin: auto; padding-top: 15px; padding-bottom: 15px;">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/putin-truba.jpg" class="img-thumbnail" style="width: 100%; margin-bottom: 15px;">
+
+				<img src="/img/putin-truba.jpg" class="img-thumbnail" style="width: 100%; margin-bottom: 15px;">  <!--Video-->
 				
 				<!-- Калькулятор -->
 				<script type="text/javascript">
